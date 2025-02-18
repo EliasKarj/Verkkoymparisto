@@ -60,3 +60,8 @@ console.log("Address: " + street + ", " + city + " " + zip);
 
 const updatedUser = { ...user, email: "Mallikas.uus@malli.fi" };
 console.log("Updated email: " + updatedUser.email);
+
+document.getElementById("displayButton").addEventListener("click", () => {
+    const inputValue = document.getElementById("userInput").value;
+    document.getElementById("result").innerHTML = inputValue;
+});
