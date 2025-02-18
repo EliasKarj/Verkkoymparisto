@@ -43,3 +43,20 @@ const car3 = new Car("Chevrolet", "Malibu", 2016);
 car1.getCarInfo();
 car2.getCarInfo();
 car3.getCarInfo();
+
+const user = {
+    name: "Mikko Mallikas",
+    email: "Mallikas@malli.fi",
+    address: {
+        street: "Mallitie 1",
+        city: "Mallikaupunki",
+        zip: "12345"
+    }
+};
+const { name, email, address: { street, city, zip } } = user;
+console.log("Name: " + name);
+console.log("Email: " + email);
+console.log("Address: " + street + ", " + city + " " + zip);
+
+const updatedUser = { ...user, email: "Mallikas.uus@malli.fi" };
+console.log("Updated email: " + updatedUser.email);
