@@ -25,3 +25,21 @@ const doubledNumbers = numbers.map(number => number * 2);
 console.log("Doubled numbers: " + doubledNumbers);
 const filteredNumbers = numbers.filter(number => number > 2);
 console.log("Filtered numbers: " + filteredNumbers);
+
+class Car {
+    constructor(make, model, year){
+        this.make = make;
+        this.model = model;
+        this.year = year;
+    }
+    getCarInfo(){
+        console.log(`Car: ${this.year} ${this.make} ${this.model}`);
+    }
+}
+const car1 = new Car("Toyota", "Corolla", 2015);
+const car2 = new Car("Ford", "Fusion", 2018);
+const car3 = new Car("Chevrolet", "Malibu", 2016);
+
+car1.getCarInfo();
+car2.getCarInfo();
+car3.getCarInfo();
